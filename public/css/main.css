@@ -1,0 +1,225 @@
+/*********************样式重写**********************/
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    font-size:14px;
+}
+.lf{float:left;}
+.rt{float:right;}
+p,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration:none;
+    color:#000;
+}
+a:hover,a.hover{
+    text-decoration:underline;
+    color:#548FC9;
+}
+img{
+    vertical-align:bottom;
+}
+/**********************头部********************/
+#top{
+    padding:5px 5px 50px 5px;
+    background-image:linear-gradient(#F9F9F9,#F2F2F2,#E9E9E7,#E3E3E1);
+    font-size:14px;
+}
+div.top-info{
+    padding-left:18px;
+    background:url(../img/main-img/time.jpg)no-repeat left center;
+}
+div.top-info>a{
+    padding-left:20px;
+    background-repeat:no-repeat;
+    background-position:left center;
+}
+a.web-index{
+    background-image:url(../img/main-img/home.jpg);
+}
+a.web-index:hover{
+    background-image:url(../img/main-img/homeon.jpg);
+}
+a.adm-index{
+    background-image:url(../img/main-img/bool.jpg);
+}
+a.adm-index:hover{
+    background-image:url(../img/main-img/boolon.jpg);
+}
+a.exit{
+    background-image:url(../img/main-img/exit.jpg);
+}
+a.exit:hover{
+    background-image:url(../img/main-img/exiton.jpg);
+}
+
+
+/*********************2.主体部分******************/
+#main{
+    background:#538EC6;
+    padding:5px 0 5px 5px;
+}
+#main:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+/*****2.1左边用户菜单部分***********/
+#main-left{
+    padding-right:5px;
+}
+        /*2.1.1用户信息*/
+#user>img{
+    padding:3px;
+    background:#fff;
+    border:1px solid #fff;
+    border-radius:5px;
+    margin-right:5px;
+    vertical-align:middle;
+}
+#user div.rt{
+    color:#fff;
+    margin-top:3px;
+}
+#user div.rt p{
+	line-height:24px;
+}
+
+    /*2.1.2菜单内容*/
+#menu{
+    margin-top:15px;
+    background:#fff;
+	height:660px;
+	overflow-y:auto;
+}
+@media screen and (min-width:1200px){
+	#menu{
+	height:847px;	
+	}
+}
+#menu>ul>li>span{
+    display:block;
+    padding:0 25px;
+    font-weight:bold;
+    cursor:pointer;
+    color: #548fc7;
+    height: 35px;
+    line-height: 35px;
+    background:#DCE5F0 url(../img/main-img/collapsed.jpg) no-repeat 10px center;
+}
+#menu>ul{
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+#menu>ul>li{
+    margin-bottom:1px;
+}
+#menu>ul>li>ul{
+    list-style-type:square;
+    color:#656565;
+    /* display:none; */ 
+    height:0;
+	overflow:hidden; 
+    transition:all .25s linear;
+	background:#F2F0F5;
+}
+#menu>ul>li>ul>li{
+    height:35px;
+    line-height:35px;
+    cursor:pointer;
+	font-size:12px;	
+}
+#menu>ul>li>span.open{
+    background-image: url(../img/main-img/expanded.jpg);
+}
+#menu>ul>li>span.open+ul{
+   /*display:block; */
+	 height:140px; 
+}
+/**********2.2右边内容***********/
+#main-right{
+    margin-left:146px;
+}
+#main-right>div{
+    display:none;
+}
+#main-right>div.active{
+    display:block;
+}
+/*右边第一块*/
+#rt-1,#rt-2,#rt-3,#rt-4{
+    background-color:#F2F0F5;
+    padding:10px;
+    min-height:727px;
+}
+#rt-1 p:hover{
+    background-color:rgb(237,245,255);
+}
+.p-1 img{
+    position:relative;
+    top:-14px;
+    left:5px;
+}
+.p-1 p{
+    line-height:40px;
+}
+.info{
+    margin:50px 0;
+}
+.info img{
+    position:relative;
+    top:-12px;
+    left:-1px;
+}
+img.warning{
+    position:relative;
+    top:-14px;
+    left:-1px;
+}
+/*rt-2 级别权限*/
+#rt-2 table{
+    width:100%;
+    text-align:center;
+    min-height:500px;
+}
+#rt-2 table tr:hover{
+    background-color:rgb(237,245,255);
+}
+#rt-2 div.tb{
+    margin:30px 0 10px 0;
+}
+.tr-1{
+    font-weight:bold;
+    font-size:16px;
+}
+/*#rt-3*/
+#rt-3 div{
+    border:1px solid transparent;
+    border-radius:15px;
+}
+#rt-3 div table{
+    width:100%;
+    min-height:400px;
+
+}
+#rt-3 table tr td:first-child{
+    background:#F9F9F9;
+    text-align:right
+}
+#rt-3 table tr td:last-child{
+    background:#fff;
+    text-align:right;
+    padding:0 300px 0 5px;
+}
+#rt-3 table tr td:last-child:hover{
+    background-color:rgb(237,245,255);
+}
+div.adm{
+    margin:15px 0 30px 0;
+}

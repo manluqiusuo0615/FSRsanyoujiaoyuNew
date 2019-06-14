@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/register.css">
+  <title></title>
+  <link rel="icon" href="img/favicon.ico"/>
+</head>
+<body>
+  <!--头部-->
+  <div class="container">
+    <h1>三友教育欢迎您</h1>
+    <div class="succ">恭喜您注册成功<br/>请登录！</div>
+  </div>
+  <!--主体-->
+  <div class="container main">
+    <video class="bg-video" src="res/snow.mp4" autoplay loop muted></video>
+    <div class="box">
+      <!--无刷新提交表单的方法-->
+      <iframe name="formsubmit" style="display:none;"></iframe>
+      <form class="form-horizontal" id="form-register" target="formsubmit">
+        <div class="form-group">
+          <div class="col-sm-2">
+            <label class="control-label" for="uname">用 户 名：</label>
+          </div>
+          <div class="col-sm-7">
+            <input required class="form-control" name="uname" id="uname" placeholder="请输入注册手机号码">
+          </div>
+          <div class="col-sm-3">
+            <span class="help-block">国内任意手机号</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-2">
+            <label class="control-label" for="upwd">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</label>
+          </div>
+          <div class="col-sm-7">
+            <input required class="form-control" id="upwd" name="upwd" placeholder="请输入注册密码">
+          </div>
+          <div class="col-sm-3">
+            <span class="help-block">10个字符以内数字</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-2">
+            <label class="control-label" for="upwd1">确认密码：</label>
+          </div>
+          <div class="col-sm-7">
+            <input required class="form-control" id="upwd1" placeholder="请再次输入密码">
+          </div>
+          <div class="col-sm-3">
+            <span class="help-block">请确认密码</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-7 col-sm-offset-2">
+            <input id="bt-register" class="btn btn-primary btn-block" type="button" value="注册">
+          </div>
+        </div>
+      </form>
+      <div class="login-description col-sm-3 col-sm-offset-9">已经拥有账户？</div>
+      <div class="col-sm-2 col-sm-offset-10">
+        <a href="login.html" class="btn btn-success" type="button">登录</a>
+      </div>
+    </div>
+  </div>
+  <!--尾部-->
+  <div class="container"></div>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+此项目运行要把整体文件放在XAMPP的htdocs下面，启动Apache,mySQL; 访问链接改为127.0.0.1：8080/login.html就好

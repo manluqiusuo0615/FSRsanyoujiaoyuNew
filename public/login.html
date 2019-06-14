@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <link rel="stylesheet" href="css/login.css"/>
+    <link rel="icon" href="img/favicon.ico"/>
+</head>
+<body>
+    <!--------1.登录页导航--------->
+    <nav id="nav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!--1.1头部显示-->
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">
+                    <img src="img/login-img/logo.png" class="img-responsive" alt="">
+                </a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bg-color">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!--折叠显示的内容-->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right"  id="bg-color">
+                    <li><a href="#" id="btn-login-blue">Blur</a></li>
+                    <li><a href="#" id="btn-login-dark">Dark</a></li>
+                    <li><a href="#" id="btn-login-light">Light</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---------2.登录信息---------->
+    <div id="main-container" class="container">
+        <!--------2.1登录框头部------------->
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+                <h1 class="login-header">
+                    <span class="glyphicon glyphicon-leaf green"></span>
+                    <span class="red">涉县</span>
+                    <span class="white" id="id-text2">三友教育</span>
+                </h1>
+                <h4 class="blue" id="company-text">
+                    应用管理
+                </h4>
+            </div>
+        </div>
+        <!--------2.2登录框内容------------->
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+                <div class="main-border">
+                    <div class="main-content">
+                        <h4 class="info">
+                            <span class="glyphicon glyphicon-thumbs-down green"></span>
+                            请输入您的信息
+                        </h4>
+                        <form>
+                            <div class="form-group has-feedback">
+                                <input required type="text" class="form-control" id="uname" name="username" placeholder="Username"/>
+                                <span class="help-block vali_info">请输入您所注册的手机号</span>
+                                <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                            </div>
+                            <div class="form-group has-feedback">
+                                <input required type="password" class="form-control" name="pwd" id="upwd" placeholder="Password"/>
+                                <span class="help-block vali_info">10个字符以内的数字</span>
+                                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-block" id="bt-login">
+                                <span class="glyphicon glyphicon-king"></span>
+                                登录
+                            </button>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"/>记住密码
+                                </label>
+                            </div>
+                        </form>
+                        <div class="social-or-login center">
+                            <span>第三方登录</span>
+                        </div>
+                        <div class="social-login center">
+                            <a href="404.html" class="btn btn-primary"></a>
+                            <a href="wx-login.html" class="btn btn-info"></a>
+                            <a href="404.html" class="btn btn-danger"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------2.3登录框底部------------->
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+                <div class="main-footer">
+                    <div class="right">
+                        <a href="register.html" class="user-register-link">注册</a>
+                        <span class="glyphicon glyphicon-arrow-right"></span>
+                    </div>
+                    <div>
+                        <span class="glyphicon glyphicon-arrow-left"></span>
+                        <a href="404.html" class="forgot-password-link">忘记密码</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
